@@ -1,0 +1,222 @@
+
+body{
+    background-color: #522258;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.task-item {
+    transition: color 0.3s ease; 
+    width: 100%;
+    max-width: 600px; 
+    margin-bottom: 15px; 
+}
+
+
+.task-item.completed {
+    color: green;
+}
+
+.task-item.completed .collapsable {
+    color: green;
+}
+
+.task-item.completed .collapsable label {
+    background: #e0ffe0; 
+    color: green;
+}
+
+
+.task-item.completed button {
+    display: none; 
+}
+
+
+
+.task-item.completed button{
+    display: none;
+}
+
+.collapsable{
+    width: 100%; 
+    overflow: hidden;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+
+.collapsable input{
+    display: none;
+}
+
+.collapsable label{
+    position: relative;
+    font-weight:600;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.1), 0 4px 11px 0 rgba(0,0,0,.08);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor:pointer;
+    padding: 15px 0;
+    border-radius: 4px; 
+    z-index: 1;
+    width: 500px;
+}
+
+.task-item.completed{
+    color:green;
+
+}
+
+.collapsable label::after{
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+
+}
+
+.collapsable input:checked + label:after{
+        transform: rotate(90deg);
+}
+
+.collapsable-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.collapsable input:checked ~ .collapsable-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.1), 0 4px 11px 0 rgba(0,0,0,.08);
+    opacity: 1;
+    top: 0;
+
+}
+
+.collapsable-text h2{
+
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #1c1c6b;
+}
+
+.collapsable-text p{
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%; 
+    max-width: 600px; 
+}
+
+.input-section input {
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 120px); 
+    margin-right: 10px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1c1c6b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #3c3c8d;
+}
+
+
+.task-item button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-button {
+    background: white; 
+}
+
+.edit-button:hover {
+    background-color: yellow;
+}
+
+.update-button {
+    background-color: white; 
+}
+
+.update-button:hover {
+    background-color: #218838;
+}
+
+.delete-button {
+    background-color: white; 
+}
+
+.delete-button:hover {
+    background-color: red;
+}
+
+.markAsDone-button {
+    background-color: white; 
+}
+
+.markAsDone-button:hover {
+    background-color: green;
+}
+
+.searchQuery input{
+    margin-bottom: 30px;
+    width: 300px;
+    height: 50px;
+    
+}
+
+.editing input{
+    
+    background: #fff;
+    display: inline;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    width: 500px;
+    margin-right: 10px;
+    font-size: larger;
+    
+}
