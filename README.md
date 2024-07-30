@@ -70,6 +70,49 @@ npm start
 
 Open your browser and navigate to `http://localhost:3000` to see the application in action.
 
+## Screenshots
+### Main Interface
+![main](https://github.com/user-attachments/assets/f554b815-1232-47f8-9706-f146f93491ab)
+
+### Adding Task
+![add task](https://github.com/user-attachments/assets/ddbdcf88-0852-4fc5-9ed0-4b61660189b3)
+
+### After Adding the Tasks
+![added task](https://github.com/user-attachments/assets/35a8ea35-3c00-462b-97a4-c017255d9ae8)
+![added task 2](https://github.com/user-attachments/assets/f23fb492-07f0-4cad-a23d-cb897a9250d2)
+
+### Edit Task
+![edit task](https://github.com/user-attachments/assets/bed5300a-9eff-472a-9df5-b4d56c7a7745)
+
+### After Editing
+![updated task](https://github.com/user-attachments/assets/bce0c737-0c6f-4e91-b03b-2e429d3cef42)
+![expandable list updated time](https://github.com/user-attachments/assets/ef1321e4-0921-4768-a23e-9b384184622c)
+
+### Delete Task 
+![delete task](https://github.com/user-attachments/assets/43ebe4c6-0247-4798-aea7-ecb8f3723109)
+![deleted task](https://github.com/user-attachments/assets/ec47f155-0904-4b00-833f-96b096660c94)
+
+### Mark As Done
+![mark as done](https://github.com/user-attachments/assets/c0a98157-f7fa-4863-916c-7accdc9fd41c)
+![done task](https://github.com/user-attachments/assets/1c91d9fd-3239-4ac7-aab9-9c81700e207e)
+
+### Search Task
+![before search](https://github.com/user-attachments/assets/011020a3-f188-4cd2-827c-2d0176efd7ce)
+![searched](https://github.com/user-attachments/assets/93824ccc-1206-48bd-b703-a3b13185165e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
