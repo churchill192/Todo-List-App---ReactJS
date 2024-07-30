@@ -85,16 +85,21 @@ const TodoList = () => {
 
   return (
     <div className='container'>
+
+        {/* Input section for adding new tasks */}
         <div className="input-section">
             <input type="text" value={task} onChange={(e)=>setTask(e.target.value)} placeholder='type a task'/>
             <button value={task} onClick={addTask}>Add Task</button>
         </div>
 
+
+        {/* Input section for searching tasks */}
         <div className='searchQuery'>
             <input type="text" value={searchQuery} placeholder='Search Tasks' onChange={(e)=>setSearchQuery(e.target.value)}/>
         </div>
         
         
+        {/* List of tasks */}
         <div className="tasks-list">
 
             {filteredTasks.map((task,index)=>{
@@ -122,6 +127,8 @@ const TodoList = () => {
                         </div>
                     </div>
                     
+
+                    {/* Buttons for editing, deleting, and marking tasks as done */}
                     <button className="edit-button" onClick={()=> startEditing(index)}>edit</button>
                     <button className="delete-button" onClick={()=> deleteTask(index)}>Delete</button>
                     <button className="markAsDone-button" onClick={()=> markAsDone(index)}>{completedTasks.includes(index)?"Done":"Mark as Done"}</button>
